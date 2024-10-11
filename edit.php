@@ -4,7 +4,8 @@ include 'config.php';
 // Comprobando si se ha enviado el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
-    $precio = $_POST['precio'];
+    $descripcion = $_POST['descripcion'];
+    $peso=$_POST
     $id = $_POST['id'];
 
     $stmt = $pdo->prepare("UPDATE jabones SET nombre = ?, precio = ? WHERE id = ?");
