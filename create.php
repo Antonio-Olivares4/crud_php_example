@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $message = 'Animal añadido con éxito!';
     } catch (PDOException $e) {
-        $message = 'Error al añadir el Animal: ' . $e->getMessage();
+        $message = 'Error al añadir el animal: ' . $e->getMessage();
     }
 }
 ?>
@@ -27,10 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Añadir Animal</title>
+    <title>Añadir animal</title>
 </head>
 <body>
-<h2>Añadir nuevo Animal</h2>
+<h2>Añadir nuevo animal</h2>
 
 <?php if (!empty($message)): ?>
     <p><?= $message ?></p>
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label for="tipo">tipo:</label>
     <input type="number" name="tipo" id="tipo" required>
     <br>
-    <input type="submit" value="Añadir Animal">
+    <input type="submit" value="Añadir animal">
 </form>
 
 </body>
