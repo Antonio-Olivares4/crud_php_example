@@ -1,15 +1,16 @@
-CREATE DATABASE tienda;
+CREATE DATABASE veterinario;
 
-USE tienda;
-CREATE TABLE jabones (
+USE veterinario;
+CREATE TABLE animales (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
     descripcion TEXT,
-    precio DECIMAL(10, 2) NOT NULL,
-    stock INT NOT NULL
+    peso DECIMAL(10, 2) NOT NULL,
+    raza text, 
+    tipo text
 );
 
-INSERT INTO jabones (nombre, descripcion, precio, stock) VALUES
+INSERT INTO animales (nombre, descripcion, peso, raza, tipo) VALUES
 ('Jabón de Lavanda', 'Jabón artesanal de lavanda', 5.99, 50),
 ('Jabón de Rosas', 'Jabón suavizante de rosas', 6.49, 40),
 ('Jabón de Menta', 'Jabón refrescante de menta', 5.89, 60),
