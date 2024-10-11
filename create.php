@@ -47,10 +47,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="number" name="peso" id="peso" required>
     <br>
     <label for="raza">raza:</label>
-    <input type="number" name="raza" id="raza" required>
+    <input type="text" name="raza" id="raza" required>
     <br>
     <label for="tipo">tipo:</label>
-    <input type="number" name="tipo" id="tipo" required>
+    <input type="text" name="tipo" id="tipo" required>
     <br>
     <input type="submit" value="Añadir animal">
 </form>
